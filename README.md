@@ -1,3 +1,3 @@
 # profit
 
-Struck of ptoject
+Project A V1.0.0
