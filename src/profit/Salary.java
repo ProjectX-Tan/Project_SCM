@@ -17,6 +17,6 @@ public class Salary {
 		this.commission = commission;
 	}
 	public String toString() {
-		return "Pay : "+(salary+commission);
+		return "Pay : "+(salary+commission)+"\nSalary : "+salary+" Commission : "+commission;
 	}
 }
