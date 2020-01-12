@@ -101,7 +101,7 @@ public class ProfitDemo {
 		}else {
 		if (salesMonth > 100000)
 			commission = salesMonth * 0.03;
-		else if (salesMonth > 50000)
+		else if (salesMonth > 25000)
 			commission = salesMonth * 0.02;
 		else if (salesMonth > 0)
 			commission = salesMonth * 0.01;
