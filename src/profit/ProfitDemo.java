@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -93,16 +94,19 @@ public class ProfitDemo {
 
 	public static void calCommission ( Employee emp , double salesMonth ) {
 		double commission;
-		if (salesMonth > 100000)
+		if (salesMonth > 50000)
 			commission = salesMonth * 0.03;
-		else if (salesMonth > 50000)
+		else if (salesMonth > 25000)
 			commission = salesMonth * 0.02;
 		else if (salesMonth > 0)
 			commission = salesMonth * 0.01;
 		else
 			commission = 0;
 
-		emp.getSalary ( ).setCommission (commission);
+		if (emp.getSalary ().getSalary ()+commission > 18000)
+			emp.getSalary ( ).setCommission (commission);
+		else
+			emp.getSalary ().setSalary (18000);
 		System.out.println ("Update Complete");
 	}
 
